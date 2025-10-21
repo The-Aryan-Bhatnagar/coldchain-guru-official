@@ -1,0 +1,214 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Thank you! We'll get back to you soon.");
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+  };
+
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent("Hello, I'd like to inquire about your cold storage services.");
+    window.open(`https://wa.me/91XXXXXXXXXX?text=${message}`, "_blank");
+  };
+
+  return (
+    <div className="min-h-screen pt-20">
+      {/* Hero Section */}
+      <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-up">
+              Get In Touch
+            </h1>
+            <p className="text-xl md:text-2xl text-primary-foreground/90 animate-fade-up">
+              Let's discuss your cold storage needs
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Content */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Contact Form */}
+            <Card className="p-8">
+              <h2 className="text-3xl font-bold text-foreground mb-6">Send Us a Message</h2>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    Name *
+                  </label>
+                  <Input
+                    id="name"
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    Email *
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                    Phone
+                  </label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    placeholder="+91 XXXXX XXXXX"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                    Subject *
+                  </label>
+                  <Input
+                    id="subject"
+                    type="text"
+                    required
+                    value={formData.subject}
+                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    placeholder="How can we help?"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    Message *
+                  </label>
+                  <Textarea
+                    id="message"
+                    required
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    placeholder="Tell us about your requirements..."
+                    rows={5}
+                  />
+                </div>
+                <Button type="submit" variant="hero" size="lg" className="w-full">
+                  Send Message
+                </Button>
+              </form>
+            </Card>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <Card className="p-8">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Contact Information</h2>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="p-3 bg-primary/10 rounded-full">
+                        <Phone className="h-6 w-6 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Phone</h3>
+                      <p className="text-muted-foreground">+91 XXXXX XXXXX</p>
+                      <p className="text-sm text-muted-foreground">Mon-Sat, 9 AM - 6 PM IST</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="p-3 bg-primary/10 rounded-full">
+                        <Mail className="h-6 w-6 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                      <p className="text-muted-foreground">info@temperatureguru.com</p>
+                      <p className="text-muted-foreground">support@temperatureguru.com</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="p-3 bg-primary/10 rounded-full">
+                        <MapPin className="h-6 w-6 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Address</h3>
+                      <p className="text-muted-foreground">
+                        Temperature Guru<br />
+                        India
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 bg-gradient-to-br from-secondary to-accent text-secondary-foreground">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3 bg-white/20 rounded-full">
+                    <MessageCircle className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold">WhatsApp Us</h3>
+                </div>
+                <p className="mb-6">
+                  Get instant responses to your queries. Chat with us on WhatsApp for quick assistance.
+                </p>
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="w-full"
+                  onClick={handleWhatsApp}
+                >
+                  Open WhatsApp Chat
+                </Button>
+              </Card>
+
+              <Card className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Business Hours</h3>
+                <div className="space-y-2 text-muted-foreground">
+                  <div className="flex justify-between">
+                    <span>Monday - Friday</span>
+                    <span className="font-medium">9:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Saturday</span>
+                    <span className="font-medium">9:00 AM - 2:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Sunday</span>
+                    <span className="font-medium text-destructive">Closed</span>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
