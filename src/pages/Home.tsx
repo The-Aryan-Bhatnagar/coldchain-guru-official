@@ -105,44 +105,27 @@ const Home = () => {
       </section>
 
       {/* Special Offer Section */}
-      <section className="py-12 bg-gradient-to-r from-secondary via-primary to-secondary">
+      <section className="py-6 bg-gradient-to-r from-secondary/50 to-primary/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-card/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 border border-primary/20">
-            <div className="text-center">
-              <div className="inline-block bg-destructive text-destructive-foreground px-6 py-2 rounded-full text-sm font-bold mb-6 animate-pulse">
-                LIMITED TIME OFFER
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Special Consultancy Pricing
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Get expert cold storage consultation at an exclusive rate
-              </p>
-              
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-muted-foreground line-through text-2xl mb-2">₹25,000</div>
-                  <div className="text-sm text-muted-foreground">Regular Price</div>
+          <div className="max-w-2xl mx-auto bg-card/95 backdrop-blur-sm rounded-lg shadow-lg p-6 border border-primary/20">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div>
+                <div className="inline-block bg-destructive text-destructive-foreground px-3 py-1 rounded-full text-xs font-bold mb-2">
+                  LIMITED OFFER
                 </div>
-                <ArrowRight className="h-8 w-8 text-primary rotate-90 md:rotate-0" />
+                <h3 className="text-xl font-bold text-foreground mb-1">Consultancy Special Price</h3>
+                <p className="text-sm text-muted-foreground">Valid till 1st January 2026</p>
+              </div>
+              <div className="flex items-center gap-3">
                 <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-bold text-primary mb-2">₹18,000</div>
-                  <div className="text-sm text-muted-foreground">Offer Price</div>
+                  <div className="text-muted-foreground line-through text-lg">₹25,000</div>
                 </div>
-              </div>
-
-              <div className="bg-muted rounded-lg p-4 mb-6 inline-block">
-                <p className="text-foreground font-semibold">
-                  Offer valid till <span className="text-primary">1st January 2026</span>
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Button size="lg" asChild>
-                  <Link to="/contact">Claim This Offer <ArrowRight className="ml-2 h-5 w-5" /></Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/services">View Services</Link>
+                <ArrowRight className="h-5 w-5 text-primary" />
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">₹18,000</div>
+                </div>
+                <Button size="sm" asChild className="ml-2">
+                  <Link to="/contact">Claim Offer</Link>
                 </Button>
               </div>
             </div>
