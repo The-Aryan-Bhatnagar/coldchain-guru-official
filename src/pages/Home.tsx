@@ -125,7 +125,7 @@ const Home = () => {
                   <div className="text-3xl font-bold text-primary">₹18,000</div>
                 </div>
                 <Button size="sm" asChild className="ml-2">
-                  <Link to="/contact">Claim Offer</Link>
+                  <Link to="/claim-offer">Claim Offer</Link>
                 </Button>
               </div>
             </div>
