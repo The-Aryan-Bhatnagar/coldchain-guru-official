@@ -6,9 +6,9 @@ const About = () => {
     { year: "1990", event: "Started journey in refrigeration industry" },
     { year: "1995", event: "Joined Vadilal as Senior Consultant" },
     { year: "2005", event: "Pioneered humidity control innovations" },
-    { year: "2010", event: "Founded Temperature Guru" },
-    { year: "2015", event: "Crossed 300+ client milestone" },
-    { year: "2025", event: "Leading India's cold storage revolution" },
+    { year: "2015", event: "Founded Temperature Guru" },
+    { year: "2020", event: "Crossed 300+ client milestone" },
+    { year: "2025", event: "Creating cold storage revolution" },
   ];
 
   const values = [
