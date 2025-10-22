@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hello, I'd like to inquire about your cold storage services.");
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${message}`, "_blank");
+    window.open(`https://wa.me/919837439412?text=${message}`, "_blank");
   };
 
   return (
@@ -133,7 +133,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+91 XXXXX XXXXX</p>
+                      <p className="text-muted-foreground">+91 9837439412 / +91 7351712217</p>
                       <p className="text-sm text-muted-foreground">Mon-Sat, 9 AM - 6 PM IST</p>
                     </div>
                   </div>
@@ -145,8 +145,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@temperatureguru.com</p>
-                      <p className="text-muted-foreground">support@temperatureguru.com</p>
+                      <p className="text-muted-foreground">aanandbhatnagar@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -159,7 +158,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-foreground mb-1">Address</h3>
                       <p className="text-muted-foreground">
                         Temperature Guru<br />
-                        India
+                        Agra, India
                       </p>
                     </div>
                   </div>
