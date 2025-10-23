@@ -7,7 +7,7 @@ const About = () => {
     { year: "1995", event: "Joined Vadilal as Senior Consultant" },
     { year: "2005", event: "Pioneered humidity control innovations" },
     { year: "2015", event: "Founded Temperature Guru" },
-    { year: "2020", event: "Crossed 300+ client milestone" },
+    { year: "2020", event: "Expanded across multiple industries" },
     { year: "2025", event: "Creating cold storage revolution" },
   ];
 
