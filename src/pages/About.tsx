@@ -17,7 +17,8 @@ const About = () => {
     },
     { 
       year: "2015", 
-      event: "Founded Temperature Guru" 
+      event: "Founded Temperature Guru. Continued work with leading industrial and government clients: Wimco Hmolite, IWP, 56 APO Pithoragarh, ITBP Bhuj, Bail Kolhu. Ongoing support for cold storage maintenance, AMC, and process optimization.",
+      highlight: "Founded Temperature Guru"
     },
     { 
       year: "2020", 
@@ -142,7 +143,16 @@ const About = () => {
                       <Card className="p-6 w-full bg-card border-border">
                         <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-start justify-between gap-4`}>
                           <div className={index % 2 === 0 ? 'text-left' : 'text-right'}>
-                            <p className="text-foreground text-base">{milestone.event}</p>
+                            <p className="text-foreground text-base">
+                              {milestone.highlight ? (
+                                <>
+                                  <strong className="font-bold text-primary">{milestone.highlight}.</strong>{' '}
+                                  {milestone.event.replace(milestone.highlight + '. ', '')}
+                                </>
+                              ) : (
+                                milestone.event
+                              )}
+                            </p>
                           </div>
                           <div className="text-3xl font-bold text-foreground flex-shrink-0">{milestone.year}</div>
                         </div>
