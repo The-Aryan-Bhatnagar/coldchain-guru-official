@@ -17,49 +17,49 @@ import {
 const Services = () => {
   const mainServices = [
     {
-      icon: Building2,
-      title: "Cold Storage Design Consultancy",
-      description: "Expert design and planning for efficient, cost-effective cold storage facilities. We analyze your requirements and create custom solutions optimized for your specific products and scale.",
-    },
-    {
-      icon: Droplets,
-      title: "Humidity Control Chamber Setup",
-      description: "State-of-the-art humidity control systems for agriculture, food processing, and pharmaceutical applications. Precise control for optimal product preservation.",
-    },
-    {
-      icon: Apple,
-      title: "Specialty Cold Storage",
-      description: "Custom solutions for Kesar Mangoes, Mushrooms, Flowers, and other specialty products. Temperature and humidity optimization for premium quality retention.",
+      icon: Snowflake,
+      title: "Ice Plants & Production Systems",
+      description: "Design and installation of Freon & Ammonia-based ice plants, ice candy plants, and ice cream production systems. Expertise gained from projects with Pepsi, Gaylord Ice Cream, and Vadilal.",
     },
     {
       icon: Wind,
-      title: "Gatta Dryer & Dehumidification",
-      description: "Advanced dehumidification solutions and Gatta dryer systems for industrial applications. Energy-efficient designs with precise moisture control.",
+      title: "Chiller Water Systems",
+      description: "Comprehensive chiller solutions with 20+ installations including dairy chillers, industrial process cooling, and custom water chilling systems for various applications.",
+    },
+    {
+      icon: Building2,
+      title: "Cold Storage Design & Installation",
+      description: "Expert design and planning for 100+ fruit & vegetable cold storages across India. Custom solutions optimized for your products with deep-temperature systems and AMC support.",
+    },
+    {
+      icon: Apple,
+      title: "Specialty Chambers",
+      description: "Custom solutions for Mushroom Chambers, Kesar Mangoes, Flowers, and specialty products. Temperature and humidity optimization for premium quality retention.",
+    },
+    {
+      icon: Droplets,
+      title: "Moisture Control & Dehumidification",
+      description: "20+ Moisture Control Godowns with advanced dehumidification technology and Gatta dryer systems for industrial applications. Energy-efficient designs with precise moisture control.",
     },
     {
       icon: Wrench,
-      title: "Installation Consultancy",
-      description: "End-to-end guidance through your cold storage installation. From site selection to commissioning, we ensure flawless execution.",
+      title: "Installation & Commissioning",
+      description: "End-to-end installation consultancy from site selection to commissioning. Proven track record with major clients including Coca-Cola, PepsiCo, Maaza, and Kinley.",
     },
     {
       icon: Settings,
-      title: "AMC Lite",
-      description: "Basic maintenance plan covering regular inspections, preventive maintenance, and standard repairs to keep your systems running smoothly.",
+      title: "AMC & Maintenance (50+ Projects)",
+      description: "Comprehensive AMC services for deep-temperature systems including regular inspections, preventive maintenance, and emergency support for cold storages and refrigeration plants.",
     },
     {
       icon: Shield,
-      title: "AMC Pro",
-      description: "Premium maintenance with 24x7 support, priority response, comprehensive coverage, and dedicated technical assistance for critical operations.",
+      title: "Government & Industrial Projects",
+      description: "Specialized solutions for government and defense establishments including 56 APO Pithoragarh, ITBP Bhuj, and industrial clients like Wimco Hmolite, IWP, Kankor Ingredients, and Camphor & Allied Products.",
     },
     {
       icon: FileText,
       title: "Subsidy Consultation",
       description: "Expert guidance on government subsidies and financial benefits for cold storage projects. We help you navigate the application process and maximize your eligible benefits.",
-    },
-    {
-      icon: Users,
-      title: "Membership Program",
-      description: "Exclusive membership offering service discounts, priority support, regular training sessions, and industry insights for long-term partners.",
     },
   ];
 
@@ -108,9 +108,9 @@ const Services = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">30+ Years of Expertise</h3>
+                    <h3 className="font-semibold text-foreground mb-2">35+ Years of Expertise</h3>
                     <p className="text-muted-foreground">
-                      Three decades of hands-on experience in refrigeration and cold storage innovation.
+                      Since 1990, delivering excellence in refrigeration with Pepsi, Gaylord, Vadilal, and major industrial clients.
                     </p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Services = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Proven Track Record</h3>
                     <p className="text-muted-foreground">
-                      500+ satisfied clients and 1000+ successful projects across India.
+                      100+ cold storages, 50+ AMC projects, 20+ chiller systems, and specialized projects across India.
                     </p>
                   </div>
                 </div>
@@ -177,7 +177,7 @@ const Services = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Industry Leaders</h3>
                     <p className="text-muted-foreground">
-                      Trusted by Coca-Cola, PepsiCo, Mother Dairy, and other major brands.
+                      Trusted by Pepsi, Coca-Cola, Maaza, Kinley, Vadilal, government establishments, and industrial leaders.
                     </p>
                   </div>
                 </div>

@@ -55,22 +55,65 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-foreground mb-8">The Journey</h2>
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                For over three decades, Anand Bhatnagar has been at the forefront of India's refrigeration 
-                and cold storage revolution. What began as a passion for precision engineering has evolved 
-                into a legacy of innovation that has transformed countless businesses across the nation.
-              </p>
-              <p>
-                With extensive experience at Vadilal and collaborations with industry giants like Coca-Cola 
-                and PepsiCo, Anand developed a deep understanding of the unique challenges facing India's 
-                cold chain industry. This expertise became the foundation for Temperature Guru.
-              </p>
-              <p>
-                Today, Temperature Guru stands as India's most trusted name in cold storage design and 
-                humidity control consultancy, serving over 500 clients and completing more than 1000 projects 
-                across diverse sectors including agriculture, food processing, pharmaceuticals, and floriculture.
-              </p>
+            <div className="space-y-8">
+              {/* 1990-1995 */}
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="text-2xl font-bold text-foreground mb-3">1990 – 1995</h3>
+                <ul className="space-y-2 text-lg text-muted-foreground">
+                  <li>• Worked with Pepsi and Gaylord Ice Cream</li>
+                  <li>• Installed and maintained ice cream production & refrigeration systems</li>
+                </ul>
+              </div>
+
+              {/* 1995-2001 */}
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="text-2xl font-bold text-foreground mb-3">1995 – 2001</h3>
+                <ul className="space-y-2 text-lg text-muted-foreground">
+                  <li>• Worked with Vadilal Ice Cream</li>
+                  <li>• Led multiple industrial refrigeration and ice cream plant projects across North India</li>
+                  <li>• Developed expertise in cold storage design, ice plants, and chiller systems</li>
+                </ul>
+              </div>
+
+              {/* 2001-2016 */}
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="text-2xl font-bold text-foreground mb-3">2001 – 2016</h3>
+                <div className="space-y-4 text-lg text-muted-foreground">
+                  <p className="font-semibold text-foreground">Executed large-scale projects for:</p>
+                  <ul className="space-y-2">
+                    <li>• Kankor Ingredients</li>
+                    <li>• Camphor & Allied Products</li>
+                  </ul>
+                  <p className="font-semibold text-foreground mt-4">Handled 50+ Cold Storage AMCs (Deep-Temperature Systems)</p>
+                  <p className="font-semibold text-foreground mt-4">Designed and commissioned:</p>
+                  <ul className="space-y-2">
+                    <li>• Freon & Ammonia-Based Ice Plants</li>
+                    <li>• 20+ Chiller Water Systems</li>
+                    <li>• 10+ Milk Chillers (in dairies)</li>
+                    <li>• 100+ Fruit & Vegetable Cold Storages</li>
+                    <li>• 10+ Mushroom Chambers</li>
+                    <li>• 20+ Moisture Control Godowns</li>
+                    <li>• 10+ Ice Candy Plants</li>
+                  </ul>
+                  <p className="font-semibold text-foreground mt-4">Major Clients: Pepsi, Coca-Cola, Maaza, Kinley</p>
+                </div>
+              </div>
+
+              {/* 2016-Present */}
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="text-2xl font-bold text-foreground mb-3">2016 – Present</h3>
+                <div className="space-y-4 text-lg text-muted-foreground">
+                  <p>Continued work with leading industrial and government clients:</p>
+                  <ul className="space-y-2">
+                    <li>• Wimco Hmolite</li>
+                    <li>• IWP</li>
+                    <li>• 56 APO Pithoragarh</li>
+                    <li>• ITBP, Bhuj</li>
+                    <li>• Bail Kolhu</li>
+                  </ul>
+                  <p className="mt-4">Ongoing support for cold storage maintenance, AMC, and process optimization</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
