@@ -12,12 +12,20 @@ const About = () => {
       event: "Worked with Vadilal Ice Cream. Led multiple industrial refrigeration and ice cream plant projects across North India. Developed expertise in cold storage design, ice plants, and chiller systems." 
     },
     { 
-      year: "2001 – 2016", 
+      year: "2001 – 2015", 
       event: "Executed large-scale projects for Kankor Ingredients and Camphor & Allied Products. Handled 50+ Cold Storage AMCs. Designed 100+ Fruit & Vegetable Cold Storages, 20+ Chiller Water Systems, 10+ Milk Chillers, 10+ Mushroom Chambers, 20+ Moisture Control Godowns, 10+ Ice Candy Plants. Major Clients: Pepsi, Coca-Cola, Maaza, Kinley." 
     },
     { 
-      year: "2016 – Present", 
-      event: "Continued work with leading industrial and government clients: Wimco Hmolite, IWP, 56 APO Pithoragarh, ITBP Bhuj, Bail Kolhu. Ongoing support for cold storage maintenance, AMC, and process optimization." 
+      year: "2015", 
+      event: "Founded Temperature Guru" 
+    },
+    { 
+      year: "2020", 
+      event: "Crossed 300+ client milestone" 
+    },
+    { 
+      year: "2025", 
+      event: "Creating cold storage revolution" 
     },
   ];
 
