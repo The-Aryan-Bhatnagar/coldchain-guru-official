@@ -144,31 +144,35 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-20">
+      <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Our Journey</h2>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold text-foreground mb-16 text-center">Our Journey</h2>
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/20"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-border"></div>
               
               {/* Timeline Items */}
-              <div className="space-y-12">
+              <div className="space-y-0">
                 {milestones.map((milestone, index) => (
                   <div 
                     key={index} 
-                    className={`flex items-center gap-8 ${
-                      index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                    }`}
+                    className="relative pb-12 last:pb-0"
                   >
-                    <div className={`flex-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                      <Card className="p-6 inline-block">
-                        <div className="text-2xl font-bold text-primary mb-2">{milestone.year}</div>
-                        <div className="text-foreground">{milestone.event}</div>
+                    {/* Timeline Dot */}
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 bg-primary rounded-full z-10" style={{ top: '32px' }}></div>
+                    
+                    {/* Card */}
+                    <div className={`flex ${index % 2 === 0 ? 'justify-start pr-[52%]' : 'justify-end pl-[52%]'}`}>
+                      <Card className="p-6 w-full bg-card border-border">
+                        <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-start justify-between gap-4`}>
+                          <div className={index % 2 === 0 ? 'text-left' : 'text-right'}>
+                            <p className="text-foreground text-base">{milestone.event}</p>
+                          </div>
+                          <div className="text-3xl font-bold text-foreground flex-shrink-0">{milestone.year}</div>
+                        </div>
                       </Card>
                     </div>
-                    <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
-                    <div className="flex-1"></div>
                   </div>
                 ))}
               </div>
