@@ -3,12 +3,22 @@ import { Card } from "@/components/ui/card";
 
 const About = () => {
   const milestones = [
-    { year: "1990", event: "Started journey in refrigeration industry" },
-    { year: "1995", event: "Joined Vadilal as Senior Consultant" },
-    { year: "2005", event: "Pioneered humidity control innovations" },
-    { year: "2015", event: "Founded Temperature Guru" },
-    { year: "2020", event: "Expanded across multiple industries" },
-    { year: "2025", event: "Creating cold storage revolution" },
+    { 
+      year: "1990 – 1995", 
+      event: "Worked with Pepsi and Gaylord Ice Cream. Installed and maintained ice cream production & refrigeration systems." 
+    },
+    { 
+      year: "1995 – 2001", 
+      event: "Worked with Vadilal Ice Cream. Led multiple industrial refrigeration and ice cream plant projects across North India. Developed expertise in cold storage design, ice plants, and chiller systems." 
+    },
+    { 
+      year: "2001 – 2016", 
+      event: "Executed large-scale projects for Kankor Ingredients and Camphor & Allied Products. Handled 50+ Cold Storage AMCs. Designed 100+ Fruit & Vegetable Cold Storages, 20+ Chiller Water Systems, 10+ Milk Chillers, 10+ Mushroom Chambers, 20+ Moisture Control Godowns, 10+ Ice Candy Plants. Major Clients: Pepsi, Coca-Cola, Maaza, Kinley." 
+    },
+    { 
+      year: "2016 – Present", 
+      event: "Continued work with leading industrial and government clients: Wimco Hmolite, IWP, 56 APO Pithoragarh, ITBP Bhuj, Bail Kolhu. Ongoing support for cold storage maintenance, AMC, and process optimization." 
+    },
   ];
 
   const values = [
@@ -54,66 +64,23 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-foreground mb-8">The Journey</h2>
-            <div className="space-y-8">
-              {/* 1990-1995 */}
-              <div className="border-l-4 border-primary pl-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3">1990 – 1995</h3>
-                <ul className="space-y-2 text-lg text-muted-foreground">
-                  <li>• Worked with Pepsi and Gaylord Ice Cream</li>
-                  <li>• Installed and maintained ice cream production & refrigeration systems</li>
-                </ul>
-              </div>
-
-              {/* 1995-2001 */}
-              <div className="border-l-4 border-primary pl-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3">1995 – 2001</h3>
-                <ul className="space-y-2 text-lg text-muted-foreground">
-                  <li>• Worked with Vadilal Ice Cream</li>
-                  <li>• Led multiple industrial refrigeration and ice cream plant projects across North India</li>
-                  <li>• Developed expertise in cold storage design, ice plants, and chiller systems</li>
-                </ul>
-              </div>
-
-              {/* 2001-2016 */}
-              <div className="border-l-4 border-primary pl-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3">2001 – 2016</h3>
-                <div className="space-y-4 text-lg text-muted-foreground">
-                  <p className="font-semibold text-foreground">Executed large-scale projects for:</p>
-                  <ul className="space-y-2">
-                    <li>• Kankor Ingredients</li>
-                    <li>• Camphor & Allied Products</li>
-                  </ul>
-                  <p className="font-semibold text-foreground mt-4">Handled 50+ Cold Storage AMCs (Deep-Temperature Systems)</p>
-                  <p className="font-semibold text-foreground mt-4">Designed and commissioned:</p>
-                  <ul className="space-y-2">
-                    <li>• Freon & Ammonia-Based Ice Plants</li>
-                    <li>• 20+ Chiller Water Systems</li>
-                    <li>• 10+ Milk Chillers (in dairies)</li>
-                    <li>• 100+ Fruit & Vegetable Cold Storages</li>
-                    <li>• 10+ Mushroom Chambers</li>
-                    <li>• 20+ Moisture Control Godowns</li>
-                    <li>• 10+ Ice Candy Plants</li>
-                  </ul>
-                  <p className="font-semibold text-foreground mt-4">Major Clients: Pepsi, Coca-Cola, Maaza, Kinley</p>
-                </div>
-              </div>
-
-              {/* 2016-Present */}
-              <div className="border-l-4 border-primary pl-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3">2016 – Present</h3>
-                <div className="space-y-4 text-lg text-muted-foreground">
-                  <p>Continued work with leading industrial and government clients:</p>
-                  <ul className="space-y-2">
-                    <li>• Wimco Hmolite</li>
-                    <li>• IWP</li>
-                    <li>• 56 APO Pithoragarh</li>
-                    <li>• ITBP, Bhuj</li>
-                    <li>• Bail Kolhu</li>
-                  </ul>
-                  <p className="mt-4">Ongoing support for cold storage maintenance, AMC, and process optimization</p>
-                </div>
-              </div>
+            <h2 className="text-4xl font-bold text-foreground mb-8">About Anand Bhatnagar</h2>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                For over three decades, Anand Bhatnagar has been at the forefront of India's refrigeration 
+                and cold storage revolution. What began as a passion for precision engineering has evolved 
+                into a legacy of innovation that has transformed countless businesses across the nation.
+              </p>
+              <p>
+                With extensive experience at Vadilal and collaborations with industry giants like Coca-Cola, 
+                PepsiCo, Maaza, and Kinley, Anand developed a deep understanding of the unique challenges 
+                facing India's cold chain industry. This expertise became the foundation for Temperature Guru.
+              </p>
+              <p>
+                Today, Temperature Guru stands as a trusted name in cold storage design and humidity control 
+                consultancy, with expertise spanning ice plants, chiller systems, specialty chambers, and 
+                comprehensive AMC services across agriculture, food processing, and industrial sectors.
+              </p>
             </div>
           </div>
         </div>
