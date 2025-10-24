@@ -34,6 +34,16 @@ import trainingSession from "@/assets/gallery/training-session.jpg";
 import exhibitionBooth from "@/assets/gallery/exhibition-booth.jpg";
 import exhibitionUnit from "@/assets/gallery/exhibition-unit.jpg";
 import walkInCooler from "@/assets/gallery/walk-in-cooler.jpg";
+import siteVisitTraining from "@/assets/gallery/site-visit-training.jpg";
+import pharmaceuticalColdRoom from "@/assets/gallery/pharmaceutical-cold-room.jpg";
+import doorHingeHardware from "@/assets/gallery/door-hinge-hardware.jpg";
+import multiChamberFacility from "@/assets/gallery/multi-chamber-facility.jpg";
+import panelWarehouseStock from "@/assets/gallery/panel-warehouse-stock.jpg";
+import drumStorageColdRoom from "@/assets/gallery/drum-storage-cold-room.jpg";
+import pufPanelStock from "@/assets/gallery/puf-panel-stock.jpg";
+import businessMeetingRoom from "@/assets/gallery/business-meeting-room.jpg";
+import mushroomGrowingFacility from "@/assets/gallery/mushroom-growing-facility.jpg";
+import prefabBuildingExterior from "@/assets/gallery/prefab-building-exterior.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -142,6 +152,21 @@ const Gallery = () => {
           title: "Industrial Refrigeration Setup",
           description: "Complete cold chain solution with advanced monitoring systems",
         },
+        {
+          src: pharmaceuticalColdRoom,
+          title: "Pharmaceutical Grade Cold Room",
+          description: "Temperature-controlled storage with organized shelving for pharmaceutical products",
+        },
+        {
+          src: multiChamberFacility,
+          title: "Multi-Chamber Cold Storage Facility",
+          description: "Professional cold storage with multiple temperature zones and control systems",
+        },
+        {
+          src: drumStorageColdRoom,
+          title: "Industrial Drum Cold Storage",
+          description: "Large-scale cold storage for industrial product storage in drums",
+        },
       ],
     },
     {
@@ -161,6 +186,11 @@ const Gallery = () => {
           src: bananaColdStorage,
           title: "Banana Ripening Control",
           description: "Humidity and temperature controlled banana ripening facility",
+        },
+        {
+          src: mushroomGrowingFacility,
+          title: "Mushroom Growing Facility",
+          description: "Climate-controlled mushroom cultivation with precision humidity control",
         },
       ],
     },
@@ -231,6 +261,36 @@ const Gallery = () => {
           src: heroImage,
           title: "Warehouse Cold Storage",
           description: "Multi-chamber cold storage facility for logistics company",
+        },
+        {
+          src: siteVisitTraining,
+          title: "Client Site Technical Training",
+          description: "On-site technical training and system demonstration for clients",
+        },
+        {
+          src: doorHingeHardware,
+          title: "Cold Storage Door Hardware",
+          description: "Premium cold storage door hinges and locking mechanisms",
+        },
+        {
+          src: panelWarehouseStock,
+          title: "Insulation Panel Warehouse Stock",
+          description: "Inventory of premium PUF insulation panels ready for installation",
+        },
+        {
+          src: pufPanelStock,
+          title: "PUF Panel Manufacturing Stock",
+          description: "Quality-controlled polyurethane foam panels in production facility",
+        },
+        {
+          src: businessMeetingRoom,
+          title: "Business Consultation Meeting",
+          description: "Professional consultation and project planning sessions with clients",
+        },
+        {
+          src: prefabBuildingExterior,
+          title: "Prefab Building Exterior",
+          description: "Modern prefabricated building with temperature control systems",
         },
       ],
     },
