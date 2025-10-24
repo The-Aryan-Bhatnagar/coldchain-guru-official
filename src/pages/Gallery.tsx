@@ -4,6 +4,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import heroImage from "@/assets/hero-cold-storage.jpg";
 import humidityImage from "@/assets/humidity-control.jpg";
 import installationImage from "@/assets/installation.jpg";
+import compressorUnit from "@/assets/gallery/compressor-unit.jpg";
+import pufPanels from "@/assets/gallery/puf-panels.jpg";
+import teamPhoto from "@/assets/gallery/team-photo.jpg";
+import constructionFrame from "@/assets/gallery/construction-frame.jpg";
+import mobileUnits from "@/assets/gallery/mobile-units.jpg";
+import insulationPanels from "@/assets/gallery/insulation-panels.jpg";
+import iceProduction from "@/assets/gallery/ice-production.jpg";
+import coldChambers from "@/assets/gallery/cold-chambers.jpg";
+import storageInterior from "@/assets/gallery/storage-interior.jpg";
+import roofConstruction from "@/assets/gallery/roof-construction.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -16,6 +26,26 @@ const Gallery = () => {
           src: heroImage,
           title: "Modern Cold Storage Facility",
           description: "Large-scale cold storage installation for food processing industry",
+        },
+        {
+          src: coldChambers,
+          title: "Multi-Chamber Cold Storage Units",
+          description: "High-capacity cold storage chambers with advanced temperature controls",
+        },
+        {
+          src: storageInterior,
+          title: "Cold Storage Interior",
+          description: "Climate-controlled storage with precision cooling systems",
+        },
+        {
+          src: compressorUnit,
+          title: "Industrial Compressor System",
+          description: "Heavy-duty refrigeration compressor for large-scale operations",
+        },
+        {
+          src: mobileUnits,
+          title: "Mobile Cold Storage Units",
+          description: "Portable refrigerated storage solutions for flexible deployment",
         },
         {
           src: installationImage,
@@ -32,11 +62,41 @@ const Gallery = () => {
           title: "Humidity Control Chamber",
           description: "Precision humidity control for agricultural products",
         },
+        {
+          src: iceProduction,
+          title: "Ice Production System",
+          description: "Flake ice generation for temperature-sensitive applications",
+        },
       ],
     },
     {
       category: "Installations",
       images: [
+        {
+          src: constructionFrame,
+          title: "Cold Storage Structure Framework",
+          description: "Pre-engineered metal framework for cold storage construction",
+        },
+        {
+          src: roofConstruction,
+          title: "Cold Storage Roof Construction",
+          description: "Insulated roofing installation for temperature retention",
+        },
+        {
+          src: pufPanels,
+          title: "PUF Insulation Panels",
+          description: "High-density polyurethane foam panels for superior insulation",
+        },
+        {
+          src: insulationPanels,
+          title: "Cold Room Insulation Panels",
+          description: "Premium insulated sandwich panels for thermal efficiency",
+        },
+        {
+          src: teamPhoto,
+          title: "Project Team at Industrial Site",
+          description: "Temperature Guru team with clients at completed installation",
+        },
         {
           src: installationImage,
           title: "Cold Room Installation",
