@@ -44,6 +44,16 @@ import pufPanelStock from "@/assets/gallery/puf-panel-stock.jpg";
 import businessMeetingRoom from "@/assets/gallery/business-meeting-room.jpg";
 import mushroomGrowingFacility from "@/assets/gallery/mushroom-growing-facility.jpg";
 import prefabBuildingExterior from "@/assets/gallery/prefab-building-exterior.jpg";
+import milkBulkCooler from "@/assets/gallery/milk-bulk-cooler.jpg";
+import steelFrameworkDetail from "@/assets/gallery/steel-framework-detail.jpg";
+import agroSiteTeam from "@/assets/gallery/agro-site-team.jpg";
+import steelConstructionProgress from "@/assets/gallery/steel-construction-progress.jpg";
+import industrialSiteTeam from "@/assets/gallery/industrial-site-team.jpg";
+import steelFrameworkConstruction from "@/assets/gallery/steel-framework-construction.jpg";
+import craneSteelInstallation from "@/assets/gallery/crane-steel-installation.jpg";
+import workerFramework from "@/assets/gallery/worker-framework.jpg";
+import roofFrameworkConstruction from "@/assets/gallery/roof-framework-construction.jpg";
+import roofConstructionWide from "@/assets/gallery/roof-construction-wide.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -166,6 +176,11 @@ const Gallery = () => {
           src: drumStorageColdRoom,
           title: "Industrial Drum Cold Storage",
           description: "Large-scale cold storage for industrial product storage in drums",
+        },
+        {
+          src: milkBulkCooler,
+          title: "Bulk Milk Cooler Tank",
+          description: "SS 304 stainless steel bulk milk cooling system - 5000 ltr capacity",
         },
       ],
     },
@@ -291,6 +306,51 @@ const Gallery = () => {
           src: prefabBuildingExterior,
           title: "Prefab Building Exterior",
           description: "Modern prefabricated building with temperature control systems",
+        },
+        {
+          src: steelFrameworkDetail,
+          title: "Steel Framework Detail View",
+          description: "Close-up of precision-engineered steel structure for cold storage facility",
+        },
+        {
+          src: agroSiteTeam,
+          title: "B.L. Agro Industries Project Team",
+          description: "Successful project completion with government and defense officials",
+        },
+        {
+          src: steelConstructionProgress,
+          title: "Steel Framework in Progress",
+          description: "Multi-level steel structure assembly for cold storage construction",
+        },
+        {
+          src: industrialSiteTeam,
+          title: "Industrial Project Team Photo",
+          description: "Temperature Guru team with clients at completed facility site",
+        },
+        {
+          src: steelFrameworkConstruction,
+          title: "Foundation Steel Framework",
+          description: "Ground-level steel framework construction with worker supervision",
+        },
+        {
+          src: craneSteelInstallation,
+          title: "Crane Steel Beam Installation",
+          description: "Heavy-duty crane lifting steel beams for roof framework assembly",
+        },
+        {
+          src: workerFramework,
+          title: "Worker Inspecting Steel Structure",
+          description: "Quality control inspection during cold storage framework construction",
+        },
+        {
+          src: roofFrameworkConstruction,
+          title: "Large-Scale Roof Framework",
+          description: "Expansive roof structure with steel framework and wooden base panels",
+        },
+        {
+          src: roofConstructionWide,
+          title: "Wide View Roof Construction",
+          description: "Panoramic view of cold storage roof framework installation",
         },
       ],
     },
