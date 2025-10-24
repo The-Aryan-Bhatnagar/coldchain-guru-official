@@ -24,6 +24,16 @@ import eggStorageRacks from "@/assets/gallery/egg-storage-racks.jpg";
 import eggTraysStorage from "@/assets/gallery/egg-trays-storage.jpg";
 import bananaCrates from "@/assets/gallery/banana-crates.jpg";
 import eggShelfStorage from "@/assets/gallery/egg-shelf-storage.jpg";
+import clientMeeting from "@/assets/gallery/client-meeting.jpg";
+import pharmaceuticalStorage from "@/assets/gallery/pharmaceutical-storage.jpg";
+import controlPanel from "@/assets/gallery/control-panel.jpg";
+import largeColdUnit from "@/assets/gallery/large-cold-unit.jpg";
+import portableCabin from "@/assets/gallery/portable-cabin.jpg";
+import coldRoomEntrance from "@/assets/gallery/cold-room-entrance.jpg";
+import trainingSession from "@/assets/gallery/training-session.jpg";
+import exhibitionBooth from "@/assets/gallery/exhibition-booth.jpg";
+import exhibitionUnit from "@/assets/gallery/exhibition-unit.jpg";
+import walkInCooler from "@/assets/gallery/walk-in-cooler.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -38,9 +48,24 @@ const Gallery = () => {
           description: "Large-scale cold storage installation for food processing industry",
         },
         {
+          src: largeColdUnit,
+          title: "Industrial Cold Storage Unit",
+          description: "Multi-level cold storage system with integrated access stairs",
+        },
+        {
           src: coldChambers,
           title: "Multi-Chamber Cold Storage Units",
           description: "High-capacity cold storage chambers with advanced temperature controls",
+        },
+        {
+          src: walkInCooler,
+          title: "Walk-In Cooler Installation",
+          description: "Commercial walk-in refrigeration unit for retail and food service",
+        },
+        {
+          src: coldRoomEntrance,
+          title: "Cold Room with Storage Racks",
+          description: "Temperature-controlled storage with organized shelving system",
         },
         {
           src: eggStorageRoom,
@@ -61,6 +86,11 @@ const Gallery = () => {
           src: eggShelfStorage,
           title: "Egg Shelf Storage Solution",
           description: "Organized cold storage shelving for egg preservation",
+        },
+        {
+          src: pharmaceuticalStorage,
+          title: "Pharmaceutical Cold Storage",
+          description: "Climate-controlled storage for temperature-sensitive pharmaceuticals",
         },
         {
           src: bananaColdStorage,
@@ -96,6 +126,11 @@ const Gallery = () => {
           src: mobileUnits,
           title: "Mobile Cold Storage Units",
           description: "Portable refrigerated storage solutions for flexible deployment",
+        },
+        {
+          src: portableCabin,
+          title: "Portable Prefab Unit",
+          description: "Mobile insulated cabin for various temperature control applications",
         },
         {
           src: securityCabins,
@@ -158,9 +193,34 @@ const Gallery = () => {
           description: "Premium insulated sandwich panels for thermal efficiency",
         },
         {
+          src: controlPanel,
+          title: "Temperature Control Panel",
+          description: "Advanced electrical control system for refrigeration management",
+        },
+        {
           src: teamPhoto,
           title: "Project Team at Industrial Site",
           description: "Temperature Guru team with clients at completed installation",
+        },
+        {
+          src: clientMeeting,
+          title: "Client Consultation Meeting",
+          description: "Professional consultation with government and defense clients",
+        },
+        {
+          src: trainingSession,
+          title: "Agri-Entrepreneurship Training",
+          description: "Knowledge sharing session on cold storage and agricultural business",
+        },
+        {
+          src: exhibitionBooth,
+          title: "Trade Exhibition Showcase",
+          description: "Temperature Guru display at industry trade fair",
+        },
+        {
+          src: exhibitionUnit,
+          title: "Exhibition Cooling Unit Display",
+          description: "Product demonstration at refrigeration industry exhibition",
         },
         {
           src: installationImage,
