@@ -14,6 +14,16 @@ import iceProduction from "@/assets/gallery/ice-production.jpg";
 import coldChambers from "@/assets/gallery/cold-chambers.jpg";
 import storageInterior from "@/assets/gallery/storage-interior.jpg";
 import roofConstruction from "@/assets/gallery/roof-construction.jpg";
+import securityCabins from "@/assets/gallery/security-cabins.jpg";
+import compressorSystem from "@/assets/gallery/compressor-system.jpg";
+import steelFramework from "@/assets/gallery/steel-framework.jpg";
+import eggStorageRoom from "@/assets/gallery/egg-storage-room.jpg";
+import bananaColdStorage from "@/assets/gallery/banana-cold-storage.jpg";
+import colorfulCrates from "@/assets/gallery/colorful-crates.jpg";
+import eggStorageRacks from "@/assets/gallery/egg-storage-racks.jpg";
+import eggTraysStorage from "@/assets/gallery/egg-trays-storage.jpg";
+import bananaCrates from "@/assets/gallery/banana-crates.jpg";
+import eggShelfStorage from "@/assets/gallery/egg-shelf-storage.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -33,6 +43,41 @@ const Gallery = () => {
           description: "High-capacity cold storage chambers with advanced temperature controls",
         },
         {
+          src: eggStorageRoom,
+          title: "Egg Cold Storage Room",
+          description: "Temperature-controlled egg storage with dual evaporator units",
+        },
+        {
+          src: eggStorageRacks,
+          title: "Egg Storage with Racking System",
+          description: "Multi-tier egg storage facility with precision cooling",
+        },
+        {
+          src: eggTraysStorage,
+          title: "Egg Tray Cold Storage",
+          description: "High-capacity egg storage in organized tray system",
+        },
+        {
+          src: eggShelfStorage,
+          title: "Egg Shelf Storage Solution",
+          description: "Organized cold storage shelving for egg preservation",
+        },
+        {
+          src: bananaColdStorage,
+          title: "Banana Ripening Chamber",
+          description: "Controlled atmosphere storage for banana ripening process",
+        },
+        {
+          src: bananaCrates,
+          title: "Banana Cold Storage with Crates",
+          description: "Fresh banana storage in climate-controlled environment",
+        },
+        {
+          src: colorfulCrates,
+          title: "Multi-Purpose Cold Storage",
+          description: "Versatile cold storage facility for various agricultural products",
+        },
+        {
           src: storageInterior,
           title: "Cold Storage Interior",
           description: "Climate-controlled storage with precision cooling systems",
@@ -43,9 +88,19 @@ const Gallery = () => {
           description: "Heavy-duty refrigeration compressor for large-scale operations",
         },
         {
+          src: compressorSystem,
+          title: "Advanced Compressor Unit",
+          description: "High-efficiency refrigeration compressor installation",
+        },
+        {
           src: mobileUnits,
           title: "Mobile Cold Storage Units",
           description: "Portable refrigerated storage solutions for flexible deployment",
+        },
+        {
+          src: securityCabins,
+          title: "Security & Control Cabins",
+          description: "Temperature monitoring and security control stations",
         },
         {
           src: installationImage,
@@ -67,11 +122,21 @@ const Gallery = () => {
           title: "Ice Production System",
           description: "Flake ice generation for temperature-sensitive applications",
         },
+        {
+          src: bananaColdStorage,
+          title: "Banana Ripening Control",
+          description: "Humidity and temperature controlled banana ripening facility",
+        },
       ],
     },
     {
       category: "Installations",
       images: [
+        {
+          src: steelFramework,
+          title: "Steel Structure Construction",
+          description: "Cold storage steel framework under construction",
+        },
         {
           src: constructionFrame,
           title: "Cold Storage Structure Framework",
