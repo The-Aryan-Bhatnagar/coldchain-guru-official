@@ -54,6 +54,9 @@ import craneSteelInstallation from "@/assets/gallery/crane-steel-installation.jp
 import workerFramework from "@/assets/gallery/worker-framework.jpg";
 import roofFrameworkConstruction from "@/assets/gallery/roof-framework-construction.jpg";
 import roofConstructionWide from "@/assets/gallery/roof-construction-wide.jpg";
+import interiorSteelFramework from "@/assets/gallery/interior-steel-framework.jpg";
+import steelWoodFramework from "@/assets/gallery/steel-wood-framework.jpg";
+import roofPanelInstallation from "@/assets/gallery/roof-panel-installation.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -351,6 +354,21 @@ const Gallery = () => {
           src: roofConstructionWide,
           title: "Wide View Roof Construction",
           description: "Panoramic view of cold storage roof framework installation",
+        },
+        {
+          src: interiorSteelFramework,
+          title: "Interior Steel Framework View",
+          description: "Inside perspective of precision-engineered steel structure construction",
+        },
+        {
+          src: steelWoodFramework,
+          title: "Steel Framework with Wooden Base",
+          description: "Multi-level steel structure with integrated wooden panel base system",
+        },
+        {
+          src: roofPanelInstallation,
+          title: "Roof Panel Installation in Progress",
+          description: "Workers installing wooden panels on expansive cold storage roof structure",
         },
       ],
     },
