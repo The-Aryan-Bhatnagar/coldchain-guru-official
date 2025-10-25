@@ -6,24 +6,54 @@ const About = () => {
   const milestones = [
     { 
       year: "1990 – 1995", 
-      event: "Worked with Pepsi and Gaylord Ice Cream. Installed and maintained ice cream production & refrigeration systems." 
+      event: (
+        <ul className="list-disc list-inside space-y-1">
+          <li>Worked with Pepsi and Gaylord Ice Cream</li>
+          <li>Installed and maintained ice cream production & refrigeration systems</li>
+        </ul>
+      )
     },
     { 
       year: "1995 – 2001", 
-      event: "Worked with Vadilal Ice Cream. Led multiple industrial refrigeration and ice cream plant projects across North India. Developed expertise in cold storage design, ice plants, and chiller systems." 
+      event: (
+        <ul className="list-disc list-inside space-y-1">
+          <li>Worked with Vadilal Ice Cream</li>
+          <li>Led multiple industrial refrigeration and ice cream plant projects across North India</li>
+          <li>Developed expertise in cold storage design, ice plants, and chiller systems</li>
+        </ul>
+      )
     },
     { 
       year: "2001 – 2015", 
-      event: "Executed large-scale projects for Kankor Ingredients and Camphor & Allied Products. Handled 50+ Cold Storage AMCs. Designed 100+ Fruit & Vegetable Cold Storages, 20+ Chiller Water Systems, 10+ Milk Chillers, 10+ Mushroom Chambers, 20+ Moisture Control Godowns, 10+ Ice Candy Plants. Major Clients: Pepsi, Coca-Cola, Maaza, Kinley." 
+      event: (
+        <div className="space-y-2">
+          <ul className="list-disc list-inside space-y-1">
+            <li>Executed large-scale projects for Kankor Ingredients and Camphor & Allied Products</li>
+            <li>Handled 50+ Cold Storage AMCs</li>
+            <li>Designed 100+ Fruit & Vegetable Cold Storages</li>
+            <li>20+ Chiller Water Systems</li>
+            <li>10+ Milk Chillers</li>
+            <li>10+ Mushroom Chambers</li>
+            <li>20+ Moisture Control Godowns</li>
+            <li>10+ Ice Candy Plants</li>
+          </ul>
+          <p className="text-sm font-medium">Major Clients: Pepsi, Coca-Cola, Maaza, Kinley</p>
+        </div>
+      )
     },
     { 
       year: "2015", 
-      event: "Founded Temperature Guru. Continued work with leading industrial and government clients: Wimco Hmolite, IWP, 56 APO Pithoragarh, ITBP Bhuj, Bail Kolhu. Ongoing support for cold storage maintenance, AMC, and process optimization.",
+      event: (
+        <ul className="list-disc list-inside space-y-1">
+          <li>Continued work with leading industrial and government clients: Wimco Hmolite, IWP, 56 APO Pithoragarh, ITBP Bhuj, Bail Kolhu</li>
+          <li>Ongoing support for cold storage maintenance, AMC, and process optimization</li>
+        </ul>
+      ),
       highlight: "Founded Temperature Guru"
     },
     { 
       year: "2020", 
-      event: "Crossed 300+ client milestone. Completed 30 years of AMC project with Coca-Cola.",
+      event: "Crossed 300+ client milestone",
       highlight: "Completed 30 years of AMC project with Coca-Cola"
     },
     { 
@@ -158,16 +188,16 @@ const About = () => {
                       <Card className="p-6 w-full bg-card border-border">
                         <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-start justify-between gap-4`}>
                           <div className={index % 2 === 0 ? 'text-left' : 'text-right'}>
-                            <p className="text-foreground text-base">
-                              {milestone.highlight ? (
-                                <>
-                                  <strong className="font-bold text-primary">{milestone.highlight}.</strong>{' '}
-                                  {milestone.event.replace(milestone.highlight + '. ', '')}
-                                </>
-                              ) : (
-                                milestone.event
+                            <div className="text-foreground text-base">
+                              {milestone.highlight && (
+                                <div className="mb-2">
+                                  <strong className="font-bold text-primary">{milestone.highlight}</strong>
+                                </div>
                               )}
-                            </p>
+                              <div>
+                                {milestone.event}
+                              </div>
+                            </div>
                           </div>
                           <div className="text-3xl font-bold text-foreground flex-shrink-0">{milestone.year}</div>
                         </div>
