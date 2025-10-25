@@ -1,5 +1,6 @@
 import { Award, Target, Users, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import founderImage from "@/assets/anand-bhatnagar-founder.jpg";
 
 const About = () => {
   const milestones = [
@@ -72,24 +73,37 @@ const About = () => {
       {/* Founder Story */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-foreground mb-8">About Anand Bhatnagar</h2>
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                For over three decades, Anand Bhatnagar has been at the forefront of India's refrigeration 
-                and cold storage revolution. What began as a passion for precision engineering has evolved 
-                into a legacy of innovation that has transformed countless businesses across the nation.
-              </p>
-              <p>
-                With extensive experience at Vadilal and collaborations with industry giants like Coca-Cola, 
-                PepsiCo, Maaza, and Kinley, Anand developed a deep understanding of the unique challenges 
-                facing India's cold chain industry. This expertise became the foundation for Temperature Guru.
-              </p>
-              <p>
-                Today, Temperature Guru stands as a trusted name in cold storage design and humidity control 
-                consultancy, with expertise spanning ice plants, chiller systems, specialty chambers, and 
-                comprehensive AMC services across agriculture, food processing, and industrial sectors.
-              </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1">
+                <h2 className="text-4xl font-bold text-foreground mb-8">About Anand Bhatnagar</h2>
+                <div className="space-y-6 text-lg text-muted-foreground">
+                  <p>
+                    For over three decades, Anand Bhatnagar has been at the forefront of India's refrigeration 
+                    and cold storage revolution. What began as a passion for precision engineering has evolved 
+                    into a legacy of innovation that has transformed countless businesses across the nation.
+                  </p>
+                  <p>
+                    With extensive experience at Vadilal and collaborations with industry giants like Coca-Cola, 
+                    PepsiCo, Maaza, and Kinley, Anand developed a deep understanding of the unique challenges 
+                    facing India's cold chain industry. This expertise became the foundation for Temperature Guru.
+                  </p>
+                  <p>
+                    Today, Temperature Guru stands as a trusted name in cold storage design and humidity control 
+                    consultancy, with expertise spanning ice plants, chiller systems, specialty chambers, and 
+                    comprehensive AMC services across agriculture, food processing, and industrial sectors.
+                  </p>
+                </div>
+              </div>
+              <div className="order-1 md:order-2">
+                <div className="relative">
+                  <img 
+                    src={founderImage} 
+                    alt="Anand Bhatnagar - Founder of Temperature Guru" 
+                    className="rounded-lg shadow-2xl w-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
