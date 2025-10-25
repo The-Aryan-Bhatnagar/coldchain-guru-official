@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Check } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const ClaimOffer = () => {
   const navigate = useNavigate();
@@ -24,35 +25,27 @@ const ClaimOffer = () => {
     setIsSubmitting(true);
 
     try {
-      // Send email with form details
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_KEY", // User needs to get this from web3forms.com
-          subject: "New Consultancy Offer Claim - Temperature Guru",
-          from_name: formData.name,
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          name: formData.name,
           email: formData.email,
           phone: formData.phone,
           company: formData.company,
           message: formData.message,
-          to_email: "info@temperatureguru.com",
-        }),
+          formType: "offer",
+        },
       });
 
-      if (response.ok) {
-        toast({
-          title: "Success!",
-          description: "Your request has been submitted. We'll contact you soon!",
-        });
-        setFormData({ name: "", email: "", phone: "", company: "", message: "" });
-        setTimeout(() => navigate("/"), 2000);
-      } else {
-        throw new Error("Failed to submit");
-      }
+      if (error) throw error;
+
+      toast({
+        title: "Success!",
+        description: "Your request has been submitted. Check your email for confirmation!",
+      });
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+      setTimeout(() => navigate("/"), 2000);
     } catch (error) {
+      console.error("Error submitting form:", error);
       toast({
         title: "Error",
         description: "Failed to submit form. Please try WhatsApp or call us directly.",
