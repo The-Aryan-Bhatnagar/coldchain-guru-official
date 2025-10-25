@@ -181,25 +181,23 @@ const About = () => {
                     className="relative pb-12 last:pb-0"
                   >
                     {/* Timeline Dot */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 bg-primary rounded-full z-10" style={{ top: '32px' }}></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full z-10 border-4 border-background" style={{ top: '24px' }}></div>
                     
                     {/* Card */}
                     <div className={`flex ${index % 2 === 0 ? 'justify-start pr-[52%]' : 'justify-end pl-[52%]'}`}>
-                      <Card className="p-6 w-full bg-card border-border">
-                        <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-start justify-between gap-4`}>
-                          <div className={index % 2 === 0 ? 'text-left' : 'text-right'}>
-                            <div className="text-foreground text-base">
-                              {milestone.highlight && (
-                                <div className="mb-2">
-                                  <strong className="font-bold text-primary">{milestone.highlight}</strong>
-                                </div>
-                              )}
-                              <div>
-                                {milestone.event}
-                              </div>
+                      <Card className="p-6 w-full bg-card border-border hover:shadow-lg transition-shadow">
+                        <div className="flex flex-col gap-3">
+                          <div className="text-2xl font-bold text-primary">{milestone.year}</div>
+                          
+                          {milestone.highlight && (
+                            <div className="bg-primary/10 px-3 py-2 rounded-md">
+                              <p className="font-bold text-primary text-lg">{milestone.highlight}</p>
                             </div>
+                          )}
+                          
+                          <div className="text-foreground text-base">
+                            {milestone.event}
                           </div>
-                          <div className="text-3xl font-bold text-foreground flex-shrink-0">{milestone.year}</div>
                         </div>
                       </Card>
                     </div>
