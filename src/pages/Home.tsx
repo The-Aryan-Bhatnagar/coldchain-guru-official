@@ -48,7 +48,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "30+", label: "Years Experience" },
+    { number: "35+", label: "Years Experience" },
     { number: "500+", label: "Happy Clients" },
     { number: "1000+", label: "Projects Completed" },
     { number: "24/7", label: "Support Available" },
@@ -83,7 +83,7 @@ const Home = () => {
             </p>
             <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl">
               Temperature Guru is India's trusted name in cold storage design and humidity control consultancy, 
-              backed by 30+ years of experience and 500+ satisfied clients.
+              backed by 35+ years of experience and 500+ satisfied clients.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg" asChild>
@@ -155,7 +155,7 @@ const Home = () => {
               About Anand Bhatnagar
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Founder & Expert at Temperature Guru, with over three decades of pioneering work in refrigeration, 
+              Founder & Expert at Temperature Guru, with over 35 years of pioneering work in refrigeration, 
               cold storage, and humidity control innovation.
             </p>
             <p className="text-muted-foreground">

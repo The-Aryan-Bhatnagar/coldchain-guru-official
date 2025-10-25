@@ -165,7 +165,7 @@ const ClaimOffer = () => {
                   </div>
                   <div className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-muted-foreground">30+ years of industry expertise</p>
+                    <p className="text-sm text-muted-foreground">35+ years of industry expertise</p>
                   </div>
                 </div>
 

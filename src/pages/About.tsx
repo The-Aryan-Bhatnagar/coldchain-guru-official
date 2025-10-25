@@ -23,7 +23,8 @@ const About = () => {
     },
     { 
       year: "2020", 
-      event: "Crossed 300+ client milestone" 
+      event: "Crossed 300+ client milestone. Completed 30 years of AMC project with Coca-Cola.",
+      highlight: "Completed 30 years of AMC project with Coca-Cola"
     },
     { 
       year: "2025", 
@@ -79,7 +80,7 @@ const About = () => {
                 <h2 className="text-4xl font-bold text-foreground mb-8">About Anand Bhatnagar</h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    For over three decades, Anand Bhatnagar has been at the forefront of India's refrigeration 
+                    For over 35 years, Anand Bhatnagar has been at the forefront of India's refrigeration
                     and cold storage revolution. What began as a passion for precision engineering has evolved 
                     into a legacy of innovation that has transformed countless businesses across the nation.
                   </p>
