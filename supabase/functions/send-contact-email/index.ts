@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { Resend } from "https://esm.sh/resend@2.0.0";
 
-const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+const MAILJET_API_KEY = Deno.env.get("MAILJET_API_KEY");
+const MAILJET_SECRET_KEY = Deno.env.get("MAILJET_SECRET_KEY");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -54,17 +54,33 @@ const handler = async (req: Request): Promise<Response> => {
         <p style="color: #666; font-size: 12px;">This is an automated email from Temperature Guru website.</p>
       `;
 
-    // Send email to admin
-    const adminResponse = await resend.emails.send({
-      from: "Temperature Guru <onboarding@resend.dev>",
-      to: ["temperatureguru@gmail.com"],
-      subject: formType === "offer" 
-        ? `New Consultancy Offer Claim - ${name}` 
-        : `Contact Form: ${subject || "New Inquiry"} - ${name}`,
-      html: adminEmailHtml,
+    // Send email to admin using Mailjet
+    const adminResponse = await fetch("https://api.mailjet.com/v3.1/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${btoa(`${MAILJET_API_KEY}:${MAILJET_SECRET_KEY}`)}`,
+      },
+      body: JSON.stringify({
+        Messages: [{
+          From: {
+            Email: "noreply@temperatureguru.com",
+            Name: "Temperature Guru"
+          },
+          To: [{
+            Email: "temperatureguru@gmail.com",
+            Name: "Temperature Guru Admin"
+          }],
+          Subject: formType === "offer" 
+            ? `New Consultancy Offer Claim - ${name}` 
+            : `Contact Form: ${subject || "New Inquiry"} - ${name}`,
+          HTMLPart: adminEmailHtml
+        }]
+      })
     });
 
-    console.log("Admin email sent:", adminResponse);
+    const adminData = await adminResponse.json();
+    console.log("Admin email sent:", adminData);
 
     // Confirmation email to user
     const userEmailHtml = formType === "offer"
@@ -92,16 +108,33 @@ const handler = async (req: Request): Promise<Response> => {
         <p>Best regards,<br>Temperature Guru Team</p>
       `;
 
-    const userResponse = await resend.emails.send({
-      from: "Temperature Guru <onboarding@resend.dev>",
-      to: [email],
-      subject: formType === "offer" 
-        ? "Thank You for Claiming Our Special Offer!" 
-        : "We Received Your Message - Temperature Guru",
-      html: userEmailHtml,
+    // Send confirmation email to user using Mailjet
+    const userResponse = await fetch("https://api.mailjet.com/v3.1/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${btoa(`${MAILJET_API_KEY}:${MAILJET_SECRET_KEY}`)}`,
+      },
+      body: JSON.stringify({
+        Messages: [{
+          From: {
+            Email: "noreply@temperatureguru.com",
+            Name: "Temperature Guru"
+          },
+          To: [{
+            Email: email,
+            Name: name
+          }],
+          Subject: formType === "offer" 
+            ? "Thank You for Claiming Our Special Offer!" 
+            : "We Received Your Message - Temperature Guru",
+          HTMLPart: userEmailHtml
+        }]
+      })
     });
 
-    console.log("User confirmation email sent:", userResponse);
+    const userData = await userResponse.json();
+    console.log("User confirmation email sent:", userData);
 
     return new Response(
       JSON.stringify({ 
