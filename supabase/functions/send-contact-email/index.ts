@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { Resend } from "npm:resend@4.0.0";
+import { Resend } from "https://esm.sh/resend@2.0.0";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
 
@@ -57,7 +57,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to admin
     const adminResponse = await resend.emails.send({
       from: "Temperature Guru <onboarding@resend.dev>",
-      to: ["aanandbhatnagar@gmail.com"],
+      to: ["temperatureguru@gmail.com"],
       subject: formType === "offer" 
         ? `New Consultancy Offer Claim - ${name}` 
         : `Contact Form: ${subject || "New Inquiry"} - ${name}`,
@@ -106,9 +106,7 @@ const handler = async (req: Request): Promise<Response> => {
     return new Response(
       JSON.stringify({ 
         success: true, 
-        message: "Emails sent successfully",
-        adminEmailId: adminResponse.id,
-        userEmailId: userResponse.id
+        message: "Emails sent successfully"
       }),
       {
         status: 200,

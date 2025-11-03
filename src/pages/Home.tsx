@@ -55,7 +55,8 @@ const Home = () => {
   ];
 
   const clients = [
-    "Coca-Cola", "PepsiCo", "Mother Dairy", "Vadilal", "Amul"
+    "Wimco Homelite", "IWP", "56 APO Pithoragarh", "ITBP Bhuj", 
+    "Bail Kolhu", "Kankor", "Gaylord Ice Cream"
   ];
 
   return (
