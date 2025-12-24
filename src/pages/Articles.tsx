@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Calendar, Clock, User } from "lucide-react";
-import controlPanel from "@/assets/gallery/control-panel.jpg";
+import heroArticles from "@/assets/hero-articles.jpg";
 
 const Articles = () => {
   const articles = [
@@ -54,7 +54,7 @@ const Articles = () => {
       <section className="relative py-20 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={controlPanel} 
+            src={heroArticles}
             alt="Technical engineering and control systems" 
             className="w-full h-full object-cover"
           />

@@ -22,6 +22,7 @@ import controlPanel from "@/assets/gallery/control-panel.jpg";
 import iceProduction from "@/assets/gallery/ice-production.jpg";
 import coldRoomEntrance from "@/assets/gallery/cold-room-entrance.jpg";
 import pharmaceuticalStorage from "@/assets/gallery/pharmaceutical-storage.jpg";
+import heroServices from "@/assets/hero-services.jpg";
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<any>(null);
@@ -176,7 +177,7 @@ const Services = () => {
       <section className="relative py-20 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={coldChambers} 
+            src={heroServices}
             alt="Cold storage chambers and humidity control systems" 
             className="w-full h-full object-cover"
           />
