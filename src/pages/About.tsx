@@ -1,7 +1,7 @@
 import { Award, Target, Users, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import founderImage from "@/assets/anand-bhatnagar-new.jpg";
-import compressorSystem from "@/assets/gallery/compressor-system.jpg";
+import heroAbout from "@/assets/hero-about.jpg";
 
 const About = () => {
   const milestones = [
@@ -92,7 +92,7 @@ const About = () => {
       <section className="relative py-20 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={compressorSystem} 
+            src={heroAbout}
             alt="Industrial cold storage and refrigeration systems" 
             className="w-full h-full object-cover"
           />

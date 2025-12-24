@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
-import clientMeeting from "@/assets/gallery/client-meeting.jpg";
+import heroContact from "@/assets/hero-contact.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -58,7 +58,7 @@ const Contact = () => {
       <section className="relative py-20 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={clientMeeting} 
+            src={heroContact}
             alt="Professional consultation at industrial facility" 
             className="w-full h-full object-cover"
           />

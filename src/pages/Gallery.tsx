@@ -57,6 +57,7 @@ import roofConstructionWide from "@/assets/gallery/roof-construction-wide.jpg";
 import interiorSteelFramework from "@/assets/gallery/interior-steel-framework.jpg";
 import steelWoodFramework from "@/assets/gallery/steel-wood-framework.jpg";
 import roofPanelInstallation from "@/assets/gallery/roof-panel-installation.jpg";
+import heroGallery from "@/assets/hero-gallery.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -380,7 +381,7 @@ const Gallery = () => {
       <section className="relative py-20 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={multiChamberFacility} 
+            src={heroGallery}
             alt="Successful cold storage installations and projects" 
             className="w-full h-full object-cover"
           />
