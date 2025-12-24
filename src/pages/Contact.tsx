@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import clientMeeting from "@/assets/gallery/client-meeting.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -54,8 +55,16 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={clientMeeting} 
+            alt="Professional consultation at industrial facility" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/85"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-up">
               Get In Touch
