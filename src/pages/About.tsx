@@ -1,6 +1,7 @@
 import { Award, Target, Users, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import founderImage from "@/assets/anand-bhatnagar-new.jpg";
+import compressorSystem from "@/assets/gallery/compressor-system.jpg";
 
 const About = () => {
   const milestones = [
@@ -45,7 +46,7 @@ const About = () => {
       year: "2015", 
       event: (
         <ul className="list-disc list-inside space-y-1">
-          <li>Continued work with leading industrial and government clients: Wimco Hmolite, IWP, 56 APO Pithoragarh, ITBP Bhuj, Bail Kolhu</li>
+          <li>Continued work with leading industrial and government clients, including Wimco HML, IWP, 56 APO Pithoragarh, ITBP Pithoragarh, and Bail Kolhu.</li>
           <li>Ongoing support for cold storage maintenance, AMC, and process optimization</li>
         </ul>
       ),
@@ -88,8 +89,16 @@ const About = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={compressorSystem} 
+            alt="Industrial cold storage and refrigeration systems" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/85"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-up">
               About Anand Bhatnagar
