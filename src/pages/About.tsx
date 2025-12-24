@@ -1,6 +1,6 @@
 import { Award, Target, Users, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import founderImage from "@/assets/anand-bhatnagar-founder.jpg";
+import founderImage from "@/assets/anand-bhatnagar-new.jpg";
 
 const About = () => {
   const milestones = [
@@ -130,8 +130,8 @@ const About = () => {
                 <div className="relative">
                   <img 
                     src={founderImage} 
-                    alt="Anand Bhatnagar - Founder of Temperature Guru" 
-                    className="rounded-lg shadow-2xl w-full object-cover"
+                    alt="Anand Bhatnagar, Founder of Temperature Guru and Cold Storage Consultant in India" 
+                    className="rounded-2xl shadow-lg w-full object-cover aspect-[4/5]"
                   />
                 </div>
               </div>
